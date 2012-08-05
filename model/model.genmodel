@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/PrimeNumberFinder/src" modelPluginID="PrimeNumberFinder"
+    modelName="Model" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false">
+  <foreignModel>primenumber.ecore</foreignModel>
+  <genPackages prefix="PrimeNumberFinder" disposableProviderFactory="true" ecorePackage="primenumber.ecore#/">
+    <genDataTypes ecoreDataType="primenumber.ecore#//Bundle"/>
+    <genDataTypes ecoreDataType="primenumber.ecore#//TextView"/>
+    <genDataTypes ecoreDataType="primenumber.ecore#//Thread"/>
+    <genDataTypes ecoreDataType="primenumber.ecore#//Lock"/>
+    <genDataTypes ecoreDataType="primenumber.ecore#//Handler"/>
+    <genDataTypes ecoreDataType="primenumber.ecore#//Message"/>
+    <genClasses ecoreClass="primenumber.ecore#//IsPrime">
+      <genOperations ecoreOperation="primenumber.ecore#//IsPrime/isPrime"/>
+    </genClasses>
+    <genClasses ecoreClass="primenumber.ecore#//MainMenu">
+      <genOperations ecoreOperation="primenumber.ecore#//MainMenu/onClick"/>
+      <genOperations ecoreOperation="primenumber.ecore#//MainMenu/onCreate">
+        <genParameters ecoreParameter="primenumber.ecore#//MainMenu/onCreate/Bundle"/>
+      </genOperations>
+      <genOperations ecoreOperation="primenumber.ecore#//MainMenu/openStartDialog"/>
+      <genOperations ecoreOperation="primenumber.ecore#//MainMenu/start">
+        <genParameters ecoreParameter="primenumber.ecore#//MainMenu/start/int"/>
+      </genOperations>
+    </genClasses>
+    <genClasses ecoreClass="primenumber.ecore#//Run">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/threads_one"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/threads_two"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/threads_three"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/threads_four"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/numPrimes1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/numPrimes2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/numPrimes3"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/numPrimes4"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/primes1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/primes2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/primes3"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/primes4"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/th1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/th2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/th3"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/th4"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/thread"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/handler"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/txt"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/time1"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/time2"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/lock"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute primenumber.ecore#//Run/msg"/>
+      <genOperations ecoreOperation="primenumber.ecore#//Run/threadHelper"/>
+      <genOperations ecoreOperation="primenumber.ecore#//Run/onCreate"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
